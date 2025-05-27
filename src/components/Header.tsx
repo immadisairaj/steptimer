@@ -1,10 +1,10 @@
 'use client';
 
+import Image from "next/image";
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         {/* <FaFingerprint className="text-foreground min-w-fit w-7 h-7" /> */}
-                        <img src="/images/logo.png" alt="Step Timer Logo" className="w-12 h-12 object-contain"/>
+                        <Image src="/images/logo.png" alt="Step Timer Logo" width={40} height={40} className="object-contain"/>
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </span>
