@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { siteDetails } from '@/data/siteDetails';
 
+import ClientProvider from "@/components/ClientProvider";
+
 import "./globals.css";
 
 const manrope = Manrope({ subsets: ['latin'] });
@@ -48,9 +50,11 @@ export default function RootLayout({
       >
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
-        <main>
-          {children}
-        </main>
+        <ClientProvider>
+          <main>
+            {children}
+          </main>
+        </ClientProvider>
         <Footer />
       </body>
     </html>
