@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
     },
     basePath: '/steptimer',
-    assetPrefix: '/steptimer',
+    // assetPrefix: '/steptimer',
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
     webpack(config) {
     config.module.rules.push({
