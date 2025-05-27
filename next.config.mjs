@@ -1,21 +1,31 @@
-import createMDX from '@next/mdx';
 import remarkGfm from 'remark-gfm';
-
-const withMDX = createMDX({
-    options: {
-        remarkPlugins: [remarkGfm],
-    },
-});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
     images: {
-        unoptimized: true,
+    unoptimized: true,
     },
-    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-    basePath: '/step-timer',
-    assetPrefix: '/step-timer',
+    basePath: '/steptimer',
+    assetPrefix: '/steptimer',
+    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
+    webpack(config) {
+    config.module.rules.push({
+        test: /\.mdx?$/,
+        use: [
+        {
+            loader: 'babel-loader',
+        },
+        {
+            loader: '@mdx-js/loader',
+            options: {
+            remarkPlugins: [remarkGfm],
+            },
+        },
+        ],
+    });
+    return config;
+    },
 };
 
-export default withMDX(nextConfig);
+export default nextConfig;
