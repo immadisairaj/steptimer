@@ -22,7 +22,7 @@ export const footerDetails: {
         //     url: "#testimonials"
         // }
     ],
-    email: 'mail+steptimer@immadisairaj.dev',
+    email: 'mail@immadisairaj.dev',
     telephone: '',
     // telephone: '+1 (123) 456-7890',
     socials: {
