@@ -1,6 +1,6 @@
 export const siteDetails = {
     siteName: 'Step Timer',
-    siteUrl: 'https://step-timer.immadisairaj.dev',
+    siteUrl: 'https://steptimer.immadisairaj.dev',
     metadata: {
         title: 'Step Timer - Next.js and Tailwind CSS Landing Page Template',
         description: 'TODO',
