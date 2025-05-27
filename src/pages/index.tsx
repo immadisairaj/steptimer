@@ -9,9 +9,20 @@ import Container from "@/components/Container";
 // import Stats from "@/components/Stats";
 // import CTA from "@/components/CTA";
 
+import Head from 'next/head';
+import { siteDetails } from '@/data/siteDetails';
+
 const HomePage: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>{siteDetails.metadata.title}</title>
+        <meta name="description" content={siteDetails.metadata.description} />
+        <meta property="og:title" content={siteDetails.metadata.title} />
+        <meta property="og:description" content={siteDetails.metadata.description} />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <Hero />
       {/* <Logos /> */}
       <Container>

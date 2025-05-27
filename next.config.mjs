@@ -1,20 +1,21 @@
-import createMDX from '@next/mdx'
+import createMDX from '@next/mdx';
 import remarkGfm from 'remark-gfm';
 
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-};
-
 const withMDX = createMDX({
-    // Add markdown plugins here, as desired
     options: {
         remarkPlugins: [remarkGfm],
     },
-})
+});
 
-// Merge MDX config with Next.js config
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'export',
+    images: {
+        unoptimized: true,
+    },
+    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+    basePath: '/step-timer',
+    assetPrefix: '/step-timer',
+};
+
 export default withMDX(nextConfig);
-
-// export default nextConfig;
