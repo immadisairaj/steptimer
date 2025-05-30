@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import AppStoreButton from './AppStoreButton';
+// import AppStoreButton from './AppStoreButton';
 import PlayStoreButton from './PlayStoreButton';
 
 import { heroDetails } from '@/data/hero';
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
                 <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
                 <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <AppStoreButton dark />
+                    {/* <AppStoreButton dark /> */}
                     <PlayStoreButton dark />
                 </div>
                 <Image
