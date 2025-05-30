@@ -1,6 +1,6 @@
 export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!',
+    heading: 'Step Timer',
+    subheading: 'Sequential Timers Made Simple - download now and start your journey with Step Timer.',
     appStoreUrl: '#',
-    googlePlayUrl: '#'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=dev.immadisairaj.step_timer'
 }

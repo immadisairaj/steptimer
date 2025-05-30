@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                     </ul>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center">
+                    {/* <div className="md:hidden flex items-center">
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                             )}
                             <span className="sr-only">Toggle navigation</span>
                         </button>
-                    </div>
+                    </div> */}
                 </nav>
             </Container>
 
