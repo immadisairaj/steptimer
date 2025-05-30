@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Step-by-Step Timer, Auto Play, Sequencial',
-    subheading: 'Ease with stopping and starting timers for continuous works',
+    heading: 'Set - Start - Sail',
+    subheading: 'Your effortless companion for running timers in a sequence',
     centerImageSrc: '/images/mockup.png',
 }
