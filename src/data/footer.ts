@@ -7,7 +7,7 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Step Timer is your effortless companion for running timers in a sequence, one after another automatically. Whether you\'re working out, studying, cooking, or conducting experiments, Step Timer helps you move through your routine smoothly and without distractions.",
+    subheading: "Step Timer is your effortless companion for running timers in a sequence, one after another automatically.",
     quickLinks: [
         {
             text: "Privacy Policy",
