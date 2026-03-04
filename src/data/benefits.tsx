@@ -1,4 +1,4 @@
-import { FiClock, FiArchive, FiRotateCcw, FiDownload, FiSettings, FiBell, FiStar } from "react-icons/fi";
+import { FiClock, FiRotateCcw, FiDownload, FiSettings } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 
